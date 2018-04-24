@@ -31,10 +31,6 @@ import astropy.units as u
 from textwrap import TextWrapper
 import astropy.visualization
 
-# explicity set non-interactive backend
-import matplotlib
-matplotlib.use('Agg')
-
 from lsst.verify import Blob, Datum, Name
 from lsst.verify import Job
 
