@@ -22,6 +22,14 @@
 
 from __future__ import print_function
 
+# Ensure that this script will run on a mis-configured node
+# that may default to a backend that requires X
+# e.g., 'Qt5Agg', even though there is is no display available
+# Putting this here in the command-line script is fine because no one
+# should import this script.
+import matplotlib
+matplotlib.use('Agg')
+
 import argparse
 import os.path
 import sys
