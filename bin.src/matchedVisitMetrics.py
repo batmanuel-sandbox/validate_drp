@@ -20,6 +20,9 @@
 # the GNU General Public License along with this program.  If not,
 # see <http://www.lsstcorp.org/LegalNotices/>.
 #
+import matplotlib
+matplotlib.use('Agg')
+
 from lsst.validate.drp.matchedVisitMetricsTask import MatchedVisitMetricsTask
 
 MatchedVisitMetricsTask.parseAndRun()
